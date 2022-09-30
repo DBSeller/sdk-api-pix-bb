@@ -1,0 +1,4 @@
+Para gerar o cliente em PHP automaticamente, em função de uma especificação usando OPENAPI ( swagger ), faça:
+java -jar swagger-codegen-cli-3.0.29 generate -i API_ARRECADACAO_PIX_V1_170621.txt -l php
+
+onde: API_ARRECADACAO_PIX_V1_170621.txt  é um arquivo contendo a api seguindo a especificacao openapi. Pode usar uma url tambem.

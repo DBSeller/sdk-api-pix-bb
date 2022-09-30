@@ -1,5 +1,5 @@
 {
-	"name" : "montreal/pixbbapi",
+	"name" : "dbseller/sdk-api-pix-bb",
 	"description" : "Cliente PHP p/ PIX API do Banco do Brasil",
 	"keywords" : [
 		"swagger",

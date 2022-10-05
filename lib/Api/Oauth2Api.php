@@ -71,9 +71,9 @@ class Oauth2Api
         $headerParams['User-Agent'] = $this->config->getUserAgent();
         $formParams['grant_type'] = "client_credentials";
         $formParams['scope'] = $this->config->getEscopoPermissoesOauth2();
-        $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+        $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        $query = \GuzzleHttp\Psr7\Query::build($queryParams);
         $request = new Request('POST', $this->config->getUrlAutenticacaoOauth2(), $headerParams, $httpBody);
 
         $options = $this->createHttpClientOption();
